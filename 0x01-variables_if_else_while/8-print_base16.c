@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - prints the hexadesimal numbers
  *
  * Return: return a status code
