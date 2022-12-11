@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * main - print the string that displays sizes of various types
  * Description: using the main function
@@ -13,7 +15,7 @@ int main(void)
 	float f;
 	/*
 	 *Sizeof operator is used to evaluate the size of a variable
-	 *
+	 */
 	 printf("Size of char: %ld bytes\n", sizeof(c));
 	 printf("Size of int: %ld bytes\n", sizeof(i));
 	 printf("Size of long int: %ld bytes\n", sizeof(li));
