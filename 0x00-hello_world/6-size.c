@@ -13,14 +13,11 @@ int main(void)
 	long int li;
 	long long int lli;
 	float f;
-	/*
-	 *Sizeof operator is used to evaluate the size of a variable
-	 */
-	 printf("Size of char: %ld bytes\n", sizeof(c));
-	 printf("Size of int: %ld bytes\n", sizeof(i));
-	 printf("Size of long int: %ld bytes\n", sizeof(li));
-	 printf("Size of long long int: %ld bytes\n", sizeof(lli));
-	 printf("Size of float %ld bytes\n", sizeof(f));
-	 return (0);
-}
 
+	printf("Size of char: %ld bytes\n", sizeof(c));
+	printf("Size of int: %ld bytes\n", sizeof(i));
+	printf("Size of long int: %ld bytes\n", sizeof(li));
+	printf("Size of long long int: %ld bytes\n", sizeof(lli));
+	printf("Size of float %ld bytes\n", sizeof(f));
+	return (0);
+}
