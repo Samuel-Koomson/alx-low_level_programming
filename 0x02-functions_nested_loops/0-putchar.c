@@ -1,9 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * putcharmsg - used for the printing of _putchar
+ * main - prints a message from main.h
+ *
+ * Return: nothing 0
  */
-void putcharmsg(void)
+int main(void)
 {
-printf("_putchar\n");
+	putcharmsg();
+	return (0);
 }
