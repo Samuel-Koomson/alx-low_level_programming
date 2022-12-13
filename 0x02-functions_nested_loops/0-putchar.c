@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-#include "main.h"
-
 /**
- * programme prints _putchar
- * Return 0
+ * putcharmsg - used for the printing of _putchar
+ * Return: 0;
  */
-
-int main(void)
+void putcharmsg(void)
 {
-printf("_putchar \n");
+printf("_putchar\n");
 return (0);
 }
