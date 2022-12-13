@@ -1,12 +1,21 @@
 #include "main.h"
 
 /**
- * main - prints a message from main.h
- *
- * Return: nothing 0
+ * main - main entry
+ * Description: prints putchar message
+ * Return: 0 success
  */
+
 int main(void)
 {
-	putcharmsg();
+	char str[] = "_putchar\n";
+	int i = 0;
+
+	while (i <= 8)
+	{
+		_putchar(str[i]);
+		i++;
+	}
 	return (0);
 }
+
