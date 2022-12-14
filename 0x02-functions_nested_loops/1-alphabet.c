@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code for printing alphabet
+ * print_alphabet - printing alphabets a to z
  *
- * Return: Always 0
+ * Return: nothing
  */
-int alphabet(int a, int z)
-{
-	int result = a >= z, i++;
-	return result;
-}
 
-int main(void)
+void print_alphabet(void)
+
 {
-	int output = alphabet (a, z);
-	putchar("output: %d\n", output);
-	return 0;
+char alpha;
+for (alpha = 'a'; alpha <= 'z'; alpha++)
+{
+_putchar(alpha);
+}
+_putchar('\n');
 }
