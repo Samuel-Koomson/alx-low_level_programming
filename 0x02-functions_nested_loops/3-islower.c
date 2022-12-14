@@ -13,9 +13,10 @@ int _islower(int c)
 {
 int value;
 
-if (_islower(c))
+if (islower(c))
 {
 value = 1;
+
 }
 else
 {
