@@ -11,15 +11,15 @@
 int _islower(int c)
 
 {
-int status_case;
+int value;
 
 if (_islower(c))
 {
-status_case = 1;
+value = 1;
 }
 else
 {
-status_case = 0;
+value = 0;
 }
-return (status_case);
+return (value);
 }
