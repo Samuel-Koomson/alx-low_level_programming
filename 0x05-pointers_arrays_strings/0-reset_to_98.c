@@ -2,17 +2,14 @@
 #include <stdio.h>
 
 /**
- * main - function that takes int as parameter
- * Return : Always 0
+ * main - function that takes a pointer to an int as parameter
+ * pointer value is updated to 98
+ * Return : n
  */
 
 void reset_to_98(int *n)
 
 {
-	int x;
-	x = 98;
-	int *ptrx;
-	ptrx = &x;
-		_putchar("value of pointer: %p\n", &x);
-	return 0;
+	*n = 98;
 }
+
