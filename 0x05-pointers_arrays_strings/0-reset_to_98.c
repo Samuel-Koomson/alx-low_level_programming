@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * main - function that takes int as parameter
@@ -10,6 +10,6 @@ int main()
 	int x = 98;
 	int *ptrx;
 	ptrx = &x
-		_putchar("value of pointer: %p\n", *ptrx);
+		_putchar("value of pointer: %p\n", &x);
 	return 0
 }
