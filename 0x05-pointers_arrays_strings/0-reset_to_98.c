@@ -7,7 +7,8 @@
 
 int main()
 {
-	int x = 98;
+	int x;
+	x = 98;
 	int *ptrx;
 	ptrx = &x;
 		_putchar("value of pointer: %p\n", &x);
