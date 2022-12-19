@@ -9,7 +9,7 @@ int main()
 {
 	int x = 98;
 	int *ptrx;
-	ptrx = &x
+	ptrx = &x;
 		_putchar("value of pointer: %p\n", &x);
-	return 0
+	return 0;
 }
