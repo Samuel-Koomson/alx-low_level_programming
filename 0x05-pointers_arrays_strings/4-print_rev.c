@@ -6,19 +6,23 @@
  * Return: 0
  */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
-int len = 0, i = 0;
-char aux;
 
-while (s[len] != '\0')
-len++;
-
-while (i < len--)
+char *m, *n;
+m = s;
+while (*s != '\0')
 {
-aux = s[i];
-s[i++] = s[len];
-s[len] = aux;
+s++;
 }
+n = s;
+while (n >= m)
+{
+if (*n != '\0')
+{
+_putchar(*n);
 }
-	 
+n--;
+}
+_putchar('\n');
+} 
