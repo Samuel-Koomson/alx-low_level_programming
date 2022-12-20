@@ -3,22 +3,22 @@
 /**
  * print_rev - prints strings in reverse
  * @*s: string to be printed
- * Return: void
+ * Return: 0
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int m = 0;
-	int i;
-	
-	while(*s != '\0')
+int len = 0, i = 0;
+char aux;
+
+while (s[len] != '\0')
+len++;
+
+while (i < len--)
 {
-	m++;
-	s++;
+aux = s[i];
+s[i++] = s[len];
+s[len] = aux;
 }
-	s--;
-	for (i = m; i > 0; i--)
-{
-	_putchar(*s);
-	s--;
 }
+	 
