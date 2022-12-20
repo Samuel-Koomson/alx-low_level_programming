@@ -14,13 +14,13 @@ int main(void)
 	int password[100];
 	int x, pass, word;
 
-	sum = 0;
+	pass = 0;
 	srand(time(NULL));
 	for (x = 0; x < 100; x++)
 	{
-		pass[x] = rand() % 78;
-		pass += (pass[x] + '0');
-		putchar(pass[x] + '0');
+		password[x] = rand() % 78;
+		pass += (password[x] + '0');
+		putchar(password[x] + '0');
 		if ((2772 - pass) - '0' < 78)
 		{
 			word = 2772 - pass - '0';
