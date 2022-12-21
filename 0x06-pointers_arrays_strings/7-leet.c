@@ -1,25 +1,26 @@
 #include "main.h"
 /**
 * leet - encodes string into 1337
-* @m: pointer  parameter
-* Return: *m
+* @s: pointer  parameter
+* Return: *s
 */
 
-char *leet(char *m)
+char *leet(char *s)
 {
-	int x, y;
+	int x;
+	int y;
 
 	char l[] = "ol_ea__t";
 
-	for (x = 0; m[x] != '\0'; x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 		for (y = 0; l[y] != '\0'; y++)
 		{
-			if (m[x] == l[y] || m[x] == (l[y] - 32))
+			if (s[x] == l[y] || s[x] == (l[y] - 32))
 			{
 				s[x] = y + '0';
 			}
 		}
 	}
-	return (m);
+	return (s);
 }
