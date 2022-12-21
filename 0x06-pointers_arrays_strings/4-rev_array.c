@@ -9,5 +9,12 @@
 
 void reverse_array(int *a, int n)
 {
-	return (reverse_array(a, n));
+	int sam, ink;
+
+	for (ink = n - 1; ink >= n / 2; ink--)
+	{
+		sam = a[n - 1 - ink];
+		a[n - 1 - ink] = a[ink];
+		a[ink] = sam;
+	}
 }
