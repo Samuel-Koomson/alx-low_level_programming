@@ -10,10 +10,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *dest = "Merry";
-		char *src = "Christmas";
-		strcat(*dest, *src);
-		printf("concatenated string: %s\n", *dest);
-		return 0;
+        (strcat(dest, src));
+	return 0;
 }
-
