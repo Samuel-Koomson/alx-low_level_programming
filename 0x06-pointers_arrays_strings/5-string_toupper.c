@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - changes lowercase to uppercase
- * @src: string being changed
+ * @str: string being changed
  * Return: changed string
  */
 
