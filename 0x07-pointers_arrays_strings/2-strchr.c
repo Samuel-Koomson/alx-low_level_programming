@@ -7,6 +7,7 @@
 * Return: string or NULL
 */
 
+
 char *_strchr(char *s, char c)
 {
 int y = 0;
