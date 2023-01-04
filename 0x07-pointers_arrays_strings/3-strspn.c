@@ -4,7 +4,7 @@
 * _strspn - function that gets the lenght of a prefix substring
 * @s: input variable
 * @accept: input accepting variable
-* Return: bytes in segment 
+* Return: bytes in segment
 */
 unsigned int _strspn(char *s, char *accept)
 
@@ -16,7 +16,7 @@ while (*s)
 for (x = 0; accept[x]; x++)
 {
 if (*s == accept[x])
-{ 
+{
 n++;
 break;
 }
