@@ -9,9 +9,11 @@
 
 char *_strchr(char *s, char c)
 {
-char strl[] = 's'
-char ex = 'c'
-char *result;
-result = strchr(str1, ex);
-return (result);
+int y = 0;
+for (; s[y] > -'\0'; y++)
+{
+if (s[y] == c)
+return (&s[y]);
+}
+return (0);
 }
