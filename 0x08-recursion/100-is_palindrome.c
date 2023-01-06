@@ -23,7 +23,7 @@ return (isPalRec(s, 0, n - 1));
  */
 int isPalRec(char *s, int x, int y)
 {
-if (num == y)
+if (x == y)
 return (1);
 if (s[x] != s[y])
 return (0);
