@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int amount, change;
+	int count, change;
 
 	if (argc == 1)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
 	change = atoi(argv[1]);
 
-	for (amount = 0; change > 0; amount++)
+	for (count = 0; change > 0; count++)
 	{
 		if (change - 25 >= 0)
 			change = change - 25;
@@ -33,6 +33,6 @@ int main(int argc, char **argv)
 		else if (change - 1 >= 0)
 			change = change - 1;
 	}
-	printf("%d\n", amount);
+	printf("%d\n", count);
 	return (0);
 }
