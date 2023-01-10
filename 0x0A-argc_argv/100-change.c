@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - function that determines change 
+ * main - function that determines change
  * @argc: number of arguments to be passed
  * @argv: an array of arguments
  * Return: 0 or 1
@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int count, change;
+	int amount, change;
 
 	if (argc == 1)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 
 	change = atoi(argv[1]);
 
-	for (count = 0; change > 0; count++)
+	for (amount = 0; change > 0; amount++)
 	{
 		if (change - 25 >= 0)
 			change = change - 25;
@@ -33,6 +33,6 @@ int main(int argc, char **argv)
 		else if (change - 1 >= 0)
 			change = change - 1;
 	}
-	printf("%d\n", count);
+	printf("%d\n", amount);
 	return (0);
 }
