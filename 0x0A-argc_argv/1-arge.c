@@ -4,7 +4,7 @@
  * main - function that determines number of arguments
  * @argc: value parameter to store number of arguments
  * @argv: ref parameter to store a string of arguments
- * Return: void
+ * Return: integer
  */
 
 int main(int argc, char *argv[])
