@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s2)
 	{
-		while (x < (length + lenght1))
+		while (x < (length + 'lenght1'))
 		{
 			sam[x] = s2[y];
 			x++;
