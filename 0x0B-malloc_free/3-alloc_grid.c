@@ -3,7 +3,7 @@
 
 /**
 * **alloc_grid- function that returns pointers to 2D arrays
-* @width: int variable width 
+* @width: int variable width
 * @height: int variable height
 * Return: 0, NULL or negative
 */
