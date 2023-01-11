@@ -10,8 +10,7 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
-	unsigned int x;
-  unsigned int length;
+	unsigned int x, unsigned int length;
 
 	x = 0;
 	length = 0;
