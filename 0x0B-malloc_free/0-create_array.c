@@ -15,7 +15,7 @@ unsigned int x = 0;
 char *yptr;
 if (size == 0)
 return (NULL);
-yptr = malloc(sizeof(c) *size);
+yptr = malloc(sizeof(c) * size);
 if (yptr == NULL)
 return (NULL);
 while (x < size)
