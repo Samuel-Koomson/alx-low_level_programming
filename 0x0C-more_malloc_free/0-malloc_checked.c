@@ -12,8 +12,8 @@ void *malloc_checked(unsigned int b)
 {
 void *nptr;
 nptr = malloc(b);
-if (nptr == NULL) 
+if (nptr == NULL)
 terminate(98);
-return (nptr)
+return (nptr);
 }
 
