@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 void *nptr;
 nptr = malloc(b);
 if (nptr == NULL)
-terminate(98);
+exit(98);
 return (nptr);
 }
 
