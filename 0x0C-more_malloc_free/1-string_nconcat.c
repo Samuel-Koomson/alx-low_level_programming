@@ -32,8 +32,8 @@ while (x < length)
 sam[x] = s1[x];
 x++;
 }
-while 
-(n < length1 && x <(length + n))
+while
+(n < length1 && x < (length + n))
 sam[x++] = s2[y++];
 while (n >= length1 && x < (length + length1))
 sam[x++] = s2[y++];
