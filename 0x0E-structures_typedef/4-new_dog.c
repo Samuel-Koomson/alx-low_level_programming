@@ -7,6 +7,7 @@
  * @owner: struct pointer variable of char, owner of dog
  * Return: struct dog new dog
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
