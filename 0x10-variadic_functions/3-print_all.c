@@ -38,11 +38,11 @@ void print_all(const char * const format, ...)
 	printf("%s%s", sam, str);
 	break;
 	default:
-	i++;
+	x++;
 	continue;
 	}
 	sam = ", ";
-	i++;
+	x++;
 	}
 	}
 
