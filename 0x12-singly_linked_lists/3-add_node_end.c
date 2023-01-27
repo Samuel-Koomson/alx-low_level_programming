@@ -9,7 +9,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	unsigned int y = 0;
+	unsigned int n = 0;
 	list_t *hptr = malloc(sizeof(list_t));
 
 	list_t *lhptr = *head;
@@ -19,9 +19,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		free(hptr);
 		return (NULL);
 	}
-	while (str[y])
-		y++;
-	hptr->len = y;
+	while (str[n])
+		n++;
+	hptr->len = n;
 	hptr->str = strdup(str);
 	hptr->next = NULL;
 
