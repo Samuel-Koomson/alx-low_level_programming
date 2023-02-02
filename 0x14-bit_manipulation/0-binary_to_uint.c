@@ -4,7 +4,7 @@
  * @b: character pointer
  * Return: converted number or 0
  */
- unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int mark, tally;
 	int lenght;
