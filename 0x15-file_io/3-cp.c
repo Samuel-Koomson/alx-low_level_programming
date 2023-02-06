@@ -24,33 +24,33 @@ void printfail(char *arg, int flag)
  */
 int main(int argc, char *argv[])
 {
-	int xfd, yfd, ist, ost;
+	int ifd, ofd, ist, ost;
 	char buf[MAXSIZE];
 
 	if (argc != 3)
 		dprintf(SE, "Usage: cp file_from file_to\n"), exit(97);
-	xfd = open(argv[1], O_RDONLY);
-	if (xfd == -1)
+	ifd = open(argv[1], O_RDONLY);
+	if (ifd == -1)
 		printfail(argv[1], 0), exit(98);
-	yfd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (yfd == -1)
+	ofd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	if (ofd == -1)
 		printfail(argv[2], 1), exit(99);
 	do {
-		ist = read(xfd, buf, MAXSIZE);
+		ist = read(ifd, buf, MAXSIZE);
 		if (ist == -1)
 			printfail(argv[1], 0), exit(98);
 		if (ist > 0)
 		{
-			ost = write(yfd, buf, (ssize_t) ist);
+			ost = write(ofd, buf, (ssize_t) ist);
 			if (ost == -1)
 				printfail(argv[2], 1), exit(99);
 		}
 	} while (ist > 0);
-	ist = close(xfd);
+	ist = close(ifd);
 	if (ist == -1)
-		dprintf(SE, "Error: Can't close fd %d\n", xfd), exit(100);
-	ost = close(yfd);
+		dprintf(SE, "Error: Can't close fd %d\n", ifd), exit(100);
+	ost = close(ofd);
 	if (ost == -1)
-		dprintf(SE, "Error: Can't close fd %d\n", yfd), exit(100);
+		dprintf(SE, "Error: Can't close fd %d\n", ofd), exit(100);
 	return (0);
 }
