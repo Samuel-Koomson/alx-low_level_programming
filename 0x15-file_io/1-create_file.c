@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+
 /**
  * create_file - Function that creates a file
  * @filename: Name of file to be created
