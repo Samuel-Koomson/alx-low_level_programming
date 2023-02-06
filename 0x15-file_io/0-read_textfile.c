@@ -4,7 +4,7 @@
  * read_textfile - Function that reads a text file and prints to stdout
  * @filename: The file from which the function is reading and printing
  * @letters: The number of letters being read and printed
- * Return: 0 if `filename` is NULL, 0 if write fails 
+ * Return: 0 if `filename` is NULL, 0 if write fails
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
