@@ -5,44 +5,55 @@
 * @n: new node value to be stored
 * Return: Address of new node or NULL if it fails
 */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-dlistint_t *new_node, *current;
-unsigned int i;
-
-if (h == NULL)
-return (NULL);
+unsigned int c = 0;
+dlistint_t *start, *new;
+unsigned int len = len_node(h);
 
 if (idx == 0)
-{
 return (add_dnodeint(h, n));
-}
-
-current = *h;
-for (i = 0; i < idx - 1 && current != NULL; i++)
+start = *h;
+while (start)
 {
-current = current->next;
-}
-
-if (current == NULL)
-{
+if (c == idx - 1)
+break;
+else if (c < idx - 1 && start == NULL)
 return (NULL);
+start = start->next;
+c++;
 }
-
-new_node = malloc(sizeof(dlistint_t));
-if (new_node == NULL)
-{
+new = malloc(sizeof(dlistint_t));
+if (new == NULL)
 return (NULL);
+if (len == idx)
+return (add_dnodeint_end(h, n));
+else if (len < idx)
+return (NULL);
+start->next->prev = new;
+new->next = start->next;
+start->next = new;
+new->prev = start;
+new->n = n;
+return (new);
 }
-new_node->n = n;
-
-new_node->prev = current;
-new_node->next = current->next;
-if (current->next != NULL)
+/**
+ * len_node - list len
+ * @node:list
+ * Return: unsigned int
+ */
+unsigned int len_node(dlistint_t **node)
 {
-current->next->prev = new_node;
-}
-current->next = new_node;
+unsigned int len = 0;
+dlistint_t *start;
 
-return (new_node);
+start = *node;
+while (start != NULL)
+{
+len += 1;
+start = start->next;
 }
+return (len);
+}
+
