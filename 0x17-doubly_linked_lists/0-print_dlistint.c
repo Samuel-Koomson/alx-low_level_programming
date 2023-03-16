@@ -1,4 +1,4 @@
-#include <lists.h>
+#include "lists.h"
 /**
 * print_dlistint - Function that prints all elements of dlistint_t list
 * @h: Head pointer to the node
@@ -10,9 +10,9 @@ size_t count = 0;
 while (h != NULL)
 {
 printf("%d\n", h->n);
-count++
-h = h->next
+count++;
+h = h->next;
 }
-return (count)
+return (count);
 }
 
