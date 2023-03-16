@@ -17,4 +17,4 @@ new_node->next = *head;
 if (*head != NULL)
 *head = new_node;
 return (new_node);
-
+}
